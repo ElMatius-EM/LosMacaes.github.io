@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comodoro Fotos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="container">
+            
+            <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+    
+            <img id="mobile-cta" class="mobile-menu" src="img/menu.svg" alt="Abrir menú">   
+    
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="img/X-close.svg" alt="Cerrar menú">
+                    
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">HOME</a></li>
+                    <li><a href="Comodoro Fotos.Html">GALERIA</a></li>
+                    <li><a href="Ubicación.html">UBICACIÓN</a></li>
+                </ul>
+                <ul class="secundary-nav">
+                    <li class=""><a href="">CONTACTO</a></li>
+                    <li class="go-premium-cta"><a href="https://l.wl.co/l?u=https%3A%2F%2Fwa.me%2Fmessage%2FYVY3US7WRCJSJ1">RESERVAR</a></li>
+                </ul>            
+            </nav>  
+        </div> 
+    </div>
+</header>
+
+<main>
+    <div class="txt">
+        <h2>Ciudad de Comodoro Rivadavia</h2>
+        <h3>Galeria de fotos</h3>
+    </div>
+    
+    <section class="movies conteiner">
+
+        <div class="swiper mySwiper">
+            
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="img Comodoro/1597927458205.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img Comodoro/lg (1).webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img Comodoro/lg.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img Comodoro/Revista-Puerto-Chubut-Comodoro-Rivadavia-Anuncian-dragado-parcial-en-el-puerto.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img Comodoro/1597927458205.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img Comodoro/lg (1).webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img Comodoro/lg.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img Comodoro/Revista-Puerto-Chubut-Comodoro-Rivadavia-Anuncian-dragado-parcial-en-el-puerto.jpg" alt="">
+                </div>
+        
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/javascript.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 15,
+        strech: 0,
+        depth: 300,
+        modifer: 1,
+        slideShadows: true,
+    },
+
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+</script>
+    
+</body>
+</html>
